@@ -9,7 +9,10 @@
  */
 function somaDobroNumerosParesFuncional(numeros){
     // TODO: Insira seu código funcional aqui
-
+    return numeros
+        .filter(n=> n % 2 === 0)
+        .map(n=> Math.pow(n,2))
+        .reduce((acc, curr)=> acc + curr,0);
 }
 
 /**
